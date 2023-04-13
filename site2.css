@@ -4,8 +4,8 @@ margin: 0 auto;
 
 .container {
     background-image: url('./imgs.site2/FUNDO_1.png');
-    /* Substitua pelo caminho da sua imagem de fundo */
-    background-size: cover;
+    background-size: 93%;
+    background-repeat: no-repeat;
     height: 100vh;
     width: 100vw;
     display: flex;
@@ -13,28 +13,27 @@ margin: 0 auto;
     align-items: left;
     justify-content: center;
     text-align: center;
+    
 }
 
-/* Estilo para a imagem sobreposta */
 .overlay-image {
     position: absolute;
     top: 0;
-    right: 250px;
-    width: 750px;
-    height: 800px;
+    left: 45%;
+    width: 100%;
+    height: 100%;
     background-image: url('./imgs.site2/FUNDO_CELULAR.png');
-    background-size: cover;
+    background-size: 600px;
+    background-repeat: no-repeat;
     z-index: 1;
 }
 
-/* Estilo para o título */
 h1 {
     font-size: 50px;
     color: white;
     text-align: left;
 }
 
-/* Estilo para o parágrafo */
 .princ p {
     font-size: 18px;
     color: white;
@@ -42,12 +41,11 @@ h1 {
 
 .princ {
     text-align: left;
-    padding-left: 370px;
+    padding-left: 450px;
     padding-bottom: 100px;
     z-index: 2;
 }
 
-/* Estilo para o botão */
 button {
     margin-top: 16px;
     font-size: 18px;
@@ -61,7 +59,6 @@ button {
     border-radius: 20px;
 }
 
-/* Estilo para os cards */
 .card-container {
     display: flex;
     justify-content: center;
@@ -70,7 +67,7 @@ button {
 }
 
 .card {
-    width: 250px;
+    width: 280px;
     height: 270px;
     padding: 16px;
     margin: 0 16px;
@@ -94,6 +91,7 @@ button {
     margin-top: 16px;
     width: 50px;
     height: 50px;
+    margin-right: 200px;
 }
 
 .card .agua {
