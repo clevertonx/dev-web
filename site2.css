@@ -108,6 +108,7 @@ button {
 
 .section1 {
     max-height: 700px;
+    margin-bottom: 13%;
 }
 
 .section1 h3 {
@@ -144,4 +145,113 @@ button {
 .card2 p {
     font-weight: 700;
     font-size: 26px;
+}
+
+.section2 {
+    background-color: #7145e0;
+    height: 75vh;
+}
+
+.section2 .section2text {
+    color: white;
+    margin-left: 5%;
+}
+
+.section2text h4 {
+    font-size:3.75rem;
+    padding-top: 7%;
+    font-weight: 700;
+}
+
+.section2text p {
+    font-size: 20px;
+}
+
+.imgsection2 img{
+    margin-left: 40%;
+}
+
+.row2 {
+    display: flex;
+    flex-direction: row;
+}
+
+.section3 {
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    background-image: url('./imgs.site2/images/bg2.png');
+}
+
+.section3 h5 {
+    font-weight: 700;
+    line-height: 1.2;
+    font-size: 2.25rem;
+    text-align: center;
+}
+
+.section3 img {
+    height: 100%;
+    width: 100%;
+}
+
+.card3{
+    width: 350px;
+    height: 300px;
+    padding: 15px;
+    margin: 0 16px;
+    text-align: center;
+}
+
+.card3 h5 {
+    font-size: 20px;
+    font-weight: 700;
+    
+}
+
+.card3 p {
+    font-size: 18px;
+}
+
+.card3 img{
+    margin-top: 16px;
+    width: 350px;
+    height: 350px;
+
+}
+
+.cardcontainer3 {
+    display: flex;
+    justify-content: center;
+    margin-top: 32px;
+}
+
+.section4 {
+    background-color: black;
+    height: 75vh;
+}
+
+.section4 .section4text {
+    color: white;
+    margin-left: 15%;   
+    text-align: right;
+}
+
+.section4text h4 {
+    font-size:3.75rem;
+    padding-top: 7%;
+    font-weight: 700;
+}
+
+.section4text p {
+    font-size: 18px;
+}
+
+.imgsection4 img{
+
+}
+
+.row3 {
+    display: flex;
+    flex-direction: row;
 }
