@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ex.9</title>
+</head>
+
+<body>
+    <h1>Calculadora de Fatorial</h1>
+    <label for="numero">Número:</label>
+    <input type="number" id="numero" name="numero">
+    
+    <button onclick="calcularFatorial()">Calcular Fatorial</button>
+    <p id="resultado"></p>
+</body>
+<script>
+    function calcularFatorial() {
+        var numero = parseInt(document.getElementById("numero").value);
+
+
+        if (numero >= 0) {
+            var fatorial = 1;
+
+            for (var i = 1; i <= numero; i++) {
+                fatorial *= i;
+            }
+
+            document.getElementById("resultado").innerHTML = "Fatorial de " + numero + " é: " + fatorial;
+        } else {
+            document.getElementById("resultado").innerHTML = "Por favor, forneça um número não negativo.";
+        }
+    }
+</script>
+
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ex.10</title>
+</head>
+
+<body>
+    <h1>Contador de Caractere</h1>
+    <label for="texto">Texto:</label>
+    <input type="text" id="texto" name="texto">
+    <br>
+    <label for="caractere">Caractere:</label>
+    <input type="text" id="caractere" name="caractere">
+    <br>
+    <button onclick="contarCaractere()">Contar Caractere</button>
+    <p id="resultado"></p>
+</body>
+<script>
+    function contarCaractere() {
+        var texto = document.getElementById("texto").value; 
+        var caractere = document.getElementById("caractere").value;
+
+        
+        caractere = caractere.toLowerCase();
+
+        var contador = 0;
+        
+        for (var i = 0; i < texto.length; i++) {
+            if (texto[i].toLowerCase() === caractere) {
+                contador++;
+            }
+        }
+
+        document.getElementById("resultado").innerHTML = "O caractere \"" + caractere + "\" aparece " + contador + " vezes no texto.";
+    }
+</script>
+
+</html>

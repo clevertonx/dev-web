@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ex.6</title>
+</head>
+
+<body>
+    <h1>Número Invertido</h1>
+    <label for="numero">Digite um número:</label>
+    <input type="number" id="numero" name="numero">
+    <button onclick="inverterNumero()">Inverter</button>
+    <p id="numeroInvertido"></p>
+</body>
+<script>
+    function inverterNumero() {
+        var numero = document.getElementById("numero").value; 
+        var numeroInvertido = numero.split("").reverse().join(""); 
+        document.getElementById("numeroInvertido").innerHTML = "Número Invertido: " + numeroInvertido; 
+    }
+</script>
+
+</html>
